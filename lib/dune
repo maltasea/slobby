@@ -1,0 +1,9 @@
+(library
+ (name slobby_lib)
+ (libraries str))
+
+(menhir
+ (modules parser)
+ (flags --explain))
+
+(ocamllex lexer)
